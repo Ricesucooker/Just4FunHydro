@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Saigu!</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="b-cake">
+   
+    <div class="cake">
+            <div class="middle"></div>
+            <div class="cho"></div>
+            <div class="top"></div> 
+    </div>
+   
+    <div class="candles">
+        <div class="flame"></div>
+        <div class="flame2"></div>
+        <div class="flame3"></div>
+        <div class="text">HAPPY BIRTHDAY SAIGU!</div>
+        <div class="shadows"></div>
+    </div>
+    <script>
+        $(document).ready(function() {
+    $(".candles").click(function() {
+        $(".flame").animate({"opacity": 0}, "fast");
+        $(".flame2").animate({"opacity": 0}, "fast");
+        $(".flame3").animate({"opacity": 0}, "fast");
+        $(".text").animate({"top": -150, "left": 5, "opacity": 1}, "fast", function() { 
+                setTimeout(function() {
+                 window.open('https://www.kudoboard.com/boards/y6ddNE4v#view', '_blank');
+                }, 1200);
+            });
+        });
+    });
+
+
+        </script>
+
+    <p class="text2">*click on the flame to blow candles*</p>
+</div>
+
+</body>
+</html>
